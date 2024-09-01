@@ -33,3 +33,40 @@ console.log(age);
 
 var age = 25;
 
+
+
+// Here it show error as Hositing work only for (var keyword)
+
+// console.log(age1);
+let age1 = 25;
+
+// console.log(age2);
+const age2 = 25;
+
+
+// Here also we get reference error 
+// sayHello();
+let sayHello = function(){
+    console.log("Hello, I am Function Expression")
+}
+
+// if we change let to const or var then also we get reference error
+
+
+// Class Hoisting 
+
+// Here we get referene error 
+const person1 = new Human();
+class Human{
+
+}
+
+// which means class hoisting is not possible
+
+
+
+
+// --------------------- Reference ------------------------
+
+// read : https://www.w3schools.com/js/js_hoisting.asp
+// video : https://youtu.be/eK4gqHb7P7w?si=0rGzY7ULEjk-rhza
